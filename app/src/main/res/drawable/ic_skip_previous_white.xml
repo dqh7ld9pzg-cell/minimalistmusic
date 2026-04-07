@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上一曲图标 - 通知栏专用
+     与播放器界面的 Icons.Filled.SkipPrevious 保持一致
+     Bug修复 (2025-11-15):
+     - 替换系统图标为Material Design图标
+     - 尺寸调大到32dp，在通知栏更清晰醒目
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6,6h2v12L6,18zM9.5,12l8.5,6L18,6z"/>
+</vector>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通知栏图标 - 极简音符图标
+     设计要求:
+     - 单色白色图标（Android通知栏标准要求）
+     - 极简的音符设计，清晰醒目
+     - 24dp标准尺寸
+     - 透明背景
+     - 线条粗，避免模糊
+
+     Bug修复 (2025-11-15):
+     - 简化设计，使用粗线条的单音符
+     - 避免复杂路径导致的模糊
+     - 提高通知栏显示清晰度
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 简单清晰的音符设计 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,3v10.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55c-2.21,0 -4,1.79 -4,4s1.79,4 4,4s4,-1.79 4,-4V7h4V3H12z"/>
+</vector>

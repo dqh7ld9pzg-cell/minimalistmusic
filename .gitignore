@@ -1,0 +1,42 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+/docs
+/tech
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Keystore files
+*.jks
+*.keystore
+
+# Sensitive files
+.env
+.env.*
+*credentials*
+*secret*
+*secrets*
+
+# Logs
+*.log
+
+# Release files
+/app/release/
+/.kotlin/
+BACKEND_DEPLOYMENT.md

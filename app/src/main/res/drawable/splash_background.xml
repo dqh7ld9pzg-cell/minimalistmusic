@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Splash 启动窗口背景 (2025-11-29)
+
+    原理:
+    - windowBackground 在 Activity 创建前就由系统显示
+    - 纯白色背景，简洁大方
+    - Logo 由 Compose UI 渲染（支持圆角）
+
+    设计权衡:
+    - 不在 windowBackground 显示 Logo，因为无法设置圆角
+    - 只设置白色背景，确保启动时无黑屏
+    - Logo 和文字由 Compose 渲染，保持视觉一致性
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <!-- 纯白色背景 -->
+    <item android:drawable="@android:color/white" />
+
+</layer-list>

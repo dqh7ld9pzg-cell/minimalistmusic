@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 启动优化 (2025-11-15):
+         - 添加启动窗口背景，消除黑屏
+         - 使用白色背景，确保图标清晰可见
+         - 配置启动图标在窗口中心显示
+
+         图标显示修复 (2025-11-15):
+         - 修复图标模糊和显示为纯色块的问题
+         - 桌面图标：使用adaptive icon（ic_minimalist_logo），白色背景
+         - 启动图标：使用PNG foreground图标，避免adaptive icon在Splash Screen中显示异常
+         - 通知栏/系统图标：自动使用adaptive icon，确保清晰显示
+    -->
+    <!-- 启动页主题 (2025-11-15)
+         优化 (2025-11-29): 纯自定义 Splash 方案
+         - 移除 Android 12+ Splash Screen API (存在样式限制问题)
+         - 使用 windowBackground 白色背景消除黑屏
+         - Compose UI 完全自定义 (圆角 Logo + 欢迎文字)
+         - 接受 200-300ms 初始化延迟 (行业标准)
+    -->
+    <style name="Theme.Splash" parent="android:Theme.Material.NoActionBar">
+        <!-- 白色背景,消除黑屏 -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+
+        <!-- 状态栏/导航栏 -->
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- 主应用主题
+         优化 (2025-11-29): 统一启动过渡体验
+         - 白色背景与 Splash 保持一致，实现无缝过渡
+         - 状态栏初始为白色，进入后由 MainActivity 动态调整
+         - 移除状态栏颜色突变，提升视觉连贯性
+    -->
+    <style name="Theme.MinimalistMusic" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#FFFFFF</item>  <!-- 与 Splash 保持一致 -->
+        <item name="android:windowLightStatusBar">true</item>  <!-- 浅色状态栏图标 -->
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

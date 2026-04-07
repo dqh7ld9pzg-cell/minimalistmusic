@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">极简音乐</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_home">首页</string>
+    <string name="nav_discover">发现</string>
+    <string name="nav_profile">我的</string>
+
+    <!-- 播放器 -->
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="next">下一曲</string>
+    <string name="previous">上一曲</string>
+    <string name="playing">正在播放</string>
+
+    <!-- 播放模式 -->
+    <string name="play_mode_sequence">顺序播放</string>
+    <string name="play_mode_shuffle">随机播放</string>
+    <string name="play_mode_repeat_one">单曲循环</string>
+
+    <!-- 搜索 -->
+    <string name="search_hint">搜索歌曲、艺术家、用户</string>
+    <string name="search_history">搜索历史</string>
+    <string name="clear_history">清空</string>
+
+    <!-- 登录 -->
+    <string name="phone_number">手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="login">登录</string>
+    <string name="guest_mode">游客模式</string>
+
+    <!-- 歌单 -->
+    <string name="my_music">我的音乐</string>
+    <string name="local_music">本地音乐</string>
+    <string name="my_playlists">我的歌单</string>
+    <string name="create_playlist">新建歌单</string>
+    <string name="playlist_name">歌单名称</string>
+
+    <!-- 通用 -->
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="share">分享</string>
+    <string name="more">更多</string>
+    <string name="loading">加载中...</string>
+    <string name="error">出错了</string>
+    <string name="retry">重试</string>
+
+    <!-- 错误提示 -->
+    <string name="network_error">网络连接失败</string>
+    <string name="no_permission">没有权限</string>
+    <string name="song_not_available">歌曲不可用</string>
+</resources>
