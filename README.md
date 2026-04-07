@@ -109,24 +109,16 @@ app/src/main/kotlin/com.minimalistmusic/
 
 1. **克隆项目**
    ```bash
-   git clone https://github.com/yourusername/minimalistmusic.git
+   git clone https://github.com/dqh7ld9pzg-cell/minimalistmusic.git
    cd minimalistmusic
    ```
 
-2. **配置 API**
-
-   打开 `app/build.gradle.kts`，配置你的 API 信息：
-   ```kotlin
-   buildConfigField("String", "NETEASE_API_BASE_URL", "\"YOUR_API_BASE_URL\"")
-   buildConfigField("String", "API_KEY", "\"YOUR_API_KEY\"")
-   ```
-
-3. **同步依赖**
+2**同步依赖**
    ```bash
    ./gradlew build
    ```
 
-4. **运行应用**
+3**运行应用**
    - 使用 Android Studio: 点击 Run 按钮
    - 使用命令行:
      ```bash
