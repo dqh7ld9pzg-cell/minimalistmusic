@@ -18,30 +18,6 @@ package com.minimalistmusic.domain.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-///**
-// * 播放模式
-// */
-//enum class PlayMode {
-//    SEQUENCE,    // 顺序播放
-//    SHUFFLE,     // 随机播放
-//    REPEAT_ONE   // 单曲循环
-//}
-//
-///**
-// * 播放状态
-// */
-//data class PlaybackState(
-//    val isPlaying: Boolean = false,
-//    val currentSong: Song? = null,
-//    val currentPosition: Long = 0L,
-//    val duration: Long = 0L,
-//    val playMode: PlayMode = PlayMode.SEQUENCE,
-//    val playlist: List<Song> = emptyList(),
-//    val currentIndex: Int = -1
-//) {
-//    val progress: Float
-//        get() = if (duration > 0) currentPosition.toFloat() / duration else 0f
-//}
 /**
  * 歌曲数据模型
  */

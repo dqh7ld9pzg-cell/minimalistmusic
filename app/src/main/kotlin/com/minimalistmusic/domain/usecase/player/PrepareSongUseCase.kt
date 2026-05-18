@@ -16,19 +16,14 @@
 
 package com.minimalistmusic.domain.usecase.player
 
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import androidx.core.net.toUri
 import androidx.media3.common.util.UnstableApi
-import com.minimalistmusic.data.cache.AudioCacheManager
-import com.minimalistmusic.data.cache.CachePerformanceTracker
-import com.minimalistmusic.data.local.UserPreferencesDataStore
-import com.minimalistmusic.util.LogConfig
 import com.minimalistmusic.domain.model.Song
 import com.minimalistmusic.domain.repository.MusicLocalRepository
 import com.minimalistmusic.domain.repository.MusicOnlineRepository
+import com.minimalistmusic.util.LogConfig
 import com.minimalistmusic.util.Result
 import javax.inject.Inject
+
 /**
  * 准备歌曲用例 (2025-11-22)
  *

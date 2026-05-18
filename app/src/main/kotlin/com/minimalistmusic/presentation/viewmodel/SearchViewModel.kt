@@ -20,13 +20,12 @@ import android.app.Application
 import androidx.annotation.OptIn
 import androidx.lifecycle.viewModelScope
 import androidx.media3.common.util.UnstableApi
-import com.minimalistmusic.util.LogConfig
 import com.minimalistmusic.domain.cache.CacheStateManager
 import com.minimalistmusic.domain.model.SearchResult
-import com.minimalistmusic.domain.model.Song
 import com.minimalistmusic.domain.repository.MusicOnlineRepository
-import com.minimalistmusic.domain.repository.SearchRepository
 import com.minimalistmusic.domain.repository.SearchHistoryRepository
+import com.minimalistmusic.domain.repository.SearchRepository
+import com.minimalistmusic.util.LogConfig
 import com.minimalistmusic.util.Result
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -37,6 +36,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
 enum class SearchTab {
     SONGS,
     ARTISTS

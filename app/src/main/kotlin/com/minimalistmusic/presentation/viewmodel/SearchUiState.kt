@@ -16,7 +16,6 @@
 
 package com.minimalistmusic.presentation.viewmodel
 
-import com.minimalistmusic.domain.model.PlaylistSource
 import com.minimalistmusic.domain.model.RecommendPlaylist
 import com.minimalistmusic.domain.model.SearchResult
 import com.minimalistmusic.domain.model.Song

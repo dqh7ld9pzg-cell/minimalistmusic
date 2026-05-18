@@ -17,21 +17,14 @@
 package com.minimalistmusic.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
+
 /**
- * 网易云音乐API数据传输对象(DTO)
+ * 网易云音乐搜索数据传输对象(DTO)
  *
  * 重构说明:
- * - 2025-11-12: 删除未使用的搜索相关DTO（搜索功能已移至 UnifiedSearchRepositoryImpl）
- * - 2025-11-12: 从 NeteaseSearchApiService.kt 迁移DTO
  * - 2025-11-11: 从 NeteaseMusicApiService.kt 中抽取所有DTO到独立文件
+ * - 2025-11-12: 删除未使用的搜索相关DTO（搜索功能已移至 NeteaseSearchRepositoryImpl）
  * - 目的: 遵循关注点分离原则,ApiService只定义接口,DTO独立管理
- */
-/**
- * 网易云音乐搜索响应
- *
- * 使用位置:
- * - NeteaseSearchApiService.search() - 搜索歌曲和艺术家
- * - UnifiedSearchRepositoryImpl - 实现搜索功能
  *
  * 搜索请求与响应样例:
  *
@@ -57,7 +50,7 @@ import com.google.gson.annotations.SerializedName
  *   result: 包含搜索结果的对象。
  *   trp: 包含追踪规则，可能与搜索结果的排序或算法有关。
  *。
- *   完整结果样例:
+ *   完整响应结果样例:
  *
  *   {
  *     "code": 200, // 状态码：200=请求成功

@@ -16,58 +16,7 @@
 
 package com.minimalistmusic.ui.components
 
-/**
- * 播放控制组件
- *
- * 播放器核心组件之一，提供完整的播放控制功能。
- *
- * ## 核心功能
- *
- * ### 1. 进度控制
- * - 进度条显示（Slider）
- * - 当前时间/总时长显示（MM:SS格式）
- * - 拖拽跳转播放位置
- *
- * ### 2. 播放控制按钮
- * - 播放模式切换（顺序/随机/单曲循环）
- * - 上一曲按钮
- * - 播放/暂停按钮（大号，居中）
- * - 下一曲按钮
- * - 播放列表按钮
- *
- * ### 3. 播放模式
- * - **顺序播放**：按列表顺序播放
- * - **随机播放**：随机选择下一首
- * - **单曲循环**：重复播放当前歌曲
- *
- * ## UI布局
- * ```
- * 进度条
- * [00:00] ━━━━━━━●━━━━ [03:45]
- *
- * 控制按钮
- * [模式] [上一曲] [播放/暂停] [下一曲] [列表]
- * ```
- *
- * ## 组件参数
- * - [progress]: 播放进度（0.0-1.0）
- * - [currentPosition]: 当前位置（毫秒）
- * - [duration]: 总时长（毫秒）
- * - [isPlaying]: 播放状态
- * - [playMode]: 播放模式
- * - [onProgressChange]: 进度变化回调
- * - [onPlayModeToggle]: 播放模式切换回调
- * - [onSkipToPrevious]: 上一曲回调
- * - [onTogglePlayPause]: 播放/暂停回调
- * - [onSkipToNext]: 下一曲回调
- * - [onPlaylistClick]: 播放列表回调
- *
- * ## 性能优化
- * - 使用方法引用（::）避免lambda开销
- * - 最小化重组范围
- *
- * @since 2025-11-11
- */
+
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
@@ -115,26 +64,57 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.minimalistmusic.domain.model.PlayMode
 import com.minimalistmusic.util.formatDuration
+
 /**
- * 播放器控制区域组件
+ * 播放器控制区域组件，提供完整的播放控制功能。
  *
- * 包含：
- * 1. 进度条
- * 2. 时间显示
- * 3. 播放控制按钮（播放模式/上一曲/播放暂停/下一曲/播放列表）
+ * ## 核心功能
  *
- * @param progress 播放进度 (0.0 - 1.0)
- * @param currentPosition 当前播放位置（毫秒）
- * @param duration 歌曲总时长（毫秒）
- * @param isPlaying 是否正在播放
- * @param playMode 当前播放模式
- * @param onProgressChange 进度变化回调（仅在松手时调用，避免频繁seekTo）
- * @param onPlayModeToggle 播放模式切换回调
- * @param onSkipToPrevious 上一曲回调
- * @param onTogglePlayPause 播放/暂停回调
- * @param onSkipToNext 下一曲回调
- * @param onPlaylistClick 播放列表按钮回调
- */
+ * ### 1. 进度控制
+ * - 进度条显示（Slider）
+ * - 当前时间/总时长显示（MM:SS格式）
+ * - 拖拽跳转播放位置
+ *
+ * ### 2. 播放控制按钮
+ * - 播放模式切换（顺序/随机/单曲循环）
+ * - 上一曲按钮
+ * - 播放/暂停按钮（大号，居中）
+ * - 下一曲按钮
+ * - 播放列表按钮
+ *
+ * ### 3. 播放模式
+ * - **顺序播放**：按列表顺序播放
+ * - **随机播放**：随机选择下一首
+ * - **单曲循环**：重复播放当前歌曲
+ *
+ * ## UI布局
+ * ```
+ * 进度条
+ * [00:00] ━━━━━━━●━━━━ [03:45]
+ *
+ * 控制按钮
+ * [模式] [上一曲] [播放/暂停] [下一曲] [列表]
+ * ```
+ *
+ * ## 组件参数
+ * - [progress]: 播放进度（0.0-1.0）
+ * - [currentPosition]: 当前位置（毫秒）
+ * - [duration]: 总时长（毫秒）
+ * - [isPlaying]: 播放状态
+ * - [playMode]: 播放模式
+ * - [onProgressChange]: 进度变化回调
+ * - [onPlayModeToggle]: 播放模式切换回调
+ * - [onSkipToPrevious]: 上一曲回调
+ * - [onTogglePlayPause]: 播放/暂停回调
+ * - [onSkipToNext]: 下一曲回调
+ * - [onPlaylistClick]: 播放列表回调
+ *
+ * ## 性能优化
+ * - 使用方法引用（::）避免lambda开销
+ * - 最小化重组范围
+ *
+ * @since 2025-11-11
+*/
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PlayerControls(
