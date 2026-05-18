@@ -22,13 +22,13 @@
 
 ## 下载
 
-[![下载 APK](https://img.shields.io/badge/下载-APK-blue)](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/latest/download/minimalist-music-v1.2.19.apk)
+[![下载 APK](https://img.shields.io/badge/下载-APK-blue)](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/download/v1.2.9/minimalist-music-v1.2.19.apk)
 
 > APK 通过 GitHub Releases 分发。不包含任何 API 密钥或凭证，自行构建时请配置自己的 API 信息。
 
 ## 演示视频
 
-[观看演示](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/latest/download/recordApp.mp4)
+[观看演示](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/download/v1.2.9/recordApp.mp4)
 
 ## 项目概述
 

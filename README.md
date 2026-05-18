@@ -22,13 +22,13 @@ A minimalist Android music player built with Kotlin and Jetpack Compose, designe
 
 ## Download
 
-[![Download APK](https://img.shields.io/badge/Download-APK-blue)](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/latest/download/minimalist-music-v1.2.19.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK-blue)](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/download/v1.2.9/minimalist-music-v1.2.19.apk)
 
 > APK is distributed via GitHub Releases. No API keys or credentials are included — configure your own before building from source.
 
 ## Demo Video
 
-[Watch Demo](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/latest/download/recordApp.mp4)
+[Watch Demo](https://github.com/dqh7ld9pzg-cell/minimalistmusic/releases/download/v1.2.9/recordApp.mp4)
 
 ## Overview
 
